@@ -6,11 +6,11 @@ sudo passwd root
 
 su
 
-sudo vi /etc/ssh/sshd_config
+sudo sed -i '/PasswordAuthentication/d;/PermitRootLogin/d' /etc/ssh/sshd_config
 
-PasswordAuthentication yes
+echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 
-PermitRootLogin yes
+echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 
 sudo /sbin/service sshd restart
 ```
