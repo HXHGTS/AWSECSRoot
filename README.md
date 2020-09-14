@@ -4,12 +4,14 @@
 ```
 sudo passwd root
 
-sudo sed -i '/PasswordAuthentication/d;/PermitRootLogin/d' /etc/ssh/sshd_config
+su
 
-sudo echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+sed -i '/PasswordAuthentication/d;/PermitRootLogin/d' /etc/ssh/sshd_config
 
-sudo echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 
-sudo /sbin/service sshd restart
+echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+
+/sbin/service sshd restart
 ```
 
