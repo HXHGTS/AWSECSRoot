@@ -1,6 +1,7 @@
 # AWSECSRoot
 切换root权限并开启密码ssh登录root账户
 
+以用户名centos登录
 ```
 sudo passwd root
 
