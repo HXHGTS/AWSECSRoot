@@ -7,7 +7,7 @@ sudo passwd root
 
 su
 
-curl https://raw.githubusercontent.com/HXHGTS/AWSECSRoot/master/sshd_config >> /etc/ssh/sshd_config
+curl https://raw.githubusercontent.com/HXHGTS/AWSECSRoot/master/sshd_config_centos7 >> /etc/ssh/sshd_config
 
 /sbin/service sshd restart
 
