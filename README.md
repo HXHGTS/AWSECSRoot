@@ -1,13 +1,23 @@
 # AWSECSRoot
 切换root权限并开启密码ssh登录root账户
 
+```
+
+sudo passwd root
+
+```
+
+```
+
+su
+
+```
+
+
 CentOS7:
 以用户名centos登录
 
 ```
-sudo passwd root
-
-su
 
 curl https://raw.githubusercontent.com/HXHGTS/AWSECSRoot/master/sshd_config_centos7 > /etc/ssh/sshd_config
 
@@ -18,9 +28,6 @@ Debian10:
 以用户名admin登录
 
 ```
-sudo passwd root
-
-su
 
 curl https://raw.githubusercontent.com/HXHGTS/AWSECSRoot/master/sshd_config_debian10 > /etc/ssh/sshd_config
 
@@ -32,9 +39,6 @@ Debian11:
 以用户名admin登录
 
 ```
-sudo passwd root
-
-su
 
 curl https://raw.githubusercontent.com/HXHGTS/AWSECSRoot/master/sshd_config_debian11 > /etc/ssh/sshd_config
 
